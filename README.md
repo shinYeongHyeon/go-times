@@ -24,7 +24,8 @@ func GetDaysOfFirstSaturdayOfMonth(t time.Time) int
 ```
 
 #### GetNthWeekOfMonth
-This will get `n`th Week of Month
+This will get `n`th Week of Month  
+(Regard the start of the week as Sunday)
 ```go
 func GetNthWeekOfMonth(t time.Time) int
 ```
