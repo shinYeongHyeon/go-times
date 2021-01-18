@@ -23,5 +23,5 @@ func GetNthWeekOfMonth(t time.Time) int {
 		return 1
 	}
 
-	return 1 + int(math.Ceil(float64(date - daysOfFirstSaturdayOfMonth) / 7))
+	return 1 + int(math.Ceil(float64(date-daysOfFirstSaturdayOfMonth)/7))
 }
