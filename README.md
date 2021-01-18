@@ -1,4 +1,5 @@
 # go-times
+[![Go Report Card](https://goreportcard.com/badge/github.com/shinYeongHyeon/go-times)](https://goreportcard.com/report/github.com/shinYeongHyeon/go-times)
 
 ## Installation
 To install `go-times` package, you need to install Go and set your Go workspace first.
