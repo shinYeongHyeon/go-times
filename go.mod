@@ -1,3 +1,3 @@
-module github.com/shinYeongHyeon/go-times@v1.0.1
+module github.com/shinYeongHyeon/go-times
 
 go 1.15
