@@ -1,4 +1,5 @@
 # go-times
+[![Build Status](https://travis-ci.com/shinYeongHyeon/go-times.svg?branch=master)](https://travis-ci.com/shinYeongHyeon/go-times)
 [![Go Report Card](https://goreportcard.com/badge/github.com/shinYeongHyeon/go-times)](https://goreportcard.com/report/github.com/shinYeongHyeon/go-times)
 [![codecov](https://codecov.io/gh/shinYeongHyeon/go-times/branch/master/graph/badge.svg?token=2A399RA25X)](https://codecov.io/gh/shinYeongHyeon/go-times)
 [![GoDoc](https://pkg.go.dev/badge/github.com/shinYeongHyeon/go-times?status.svg)](https://pkg.go.dev/github.com/shinYeongHyeon/go-times@master)
