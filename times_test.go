@@ -97,4 +97,9 @@ func TestGetNthWeekOfMonth(t *testing.T) {
 	if got := GetNthWeekOfMonth(startedMondayMonth); got != want {
 		t.Errorf("GetNthWeekOfMonth() = %v, want %v", got, want)
 	}
+
+	want = 2
+	if got := GetNthWeekOfMonth(startedSaturdayMonth); got != want {
+		t.Errorf("GetNthWeekOfMonth() = %v, want %v", got, want)
+	}
 }
