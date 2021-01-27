@@ -6,7 +6,6 @@ import (
 )
 
 // GetDateOfFirstMondayOfMonth : get date of first monday
-// day : DaysMap
 func GetDateOfFirstMondayOfMonth(t time.Time) int {
 	dayFirstDateOfMonth := getDayOfFirstDateOfMonth(t)
 
@@ -18,7 +17,6 @@ func GetDateOfFirstMondayOfMonth(t time.Time) int {
 }
 
 // GetDateOfFirstTuesdayOfMonth : get date of first tuesday
-// day : DaysMap
 func GetDateOfFirstTuesdayOfMonth(t time.Time) int {
 	dayFirstDateOfMonth := getDayOfFirstDateOfMonth(t)
 
@@ -30,7 +28,6 @@ func GetDateOfFirstTuesdayOfMonth(t time.Time) int {
 }
 
 // GetDateOfFirstWednesdayOfMonth : get date of first wednesday
-// day : DaysMap
 func GetDateOfFirstWednesdayOfMonth(t time.Time) int {
 	dayFirstDateOfMonth := getDayOfFirstDateOfMonth(t)
 
@@ -42,7 +39,6 @@ func GetDateOfFirstWednesdayOfMonth(t time.Time) int {
 }
 
 // GetDateOfFirstThursdayOfMonth : get date of first thursday
-// day : DaysMap
 func GetDateOfFirstThursdayOfMonth(t time.Time) int {
 	dayFirstDateOfMonth := getDayOfFirstDateOfMonth(t)
 
@@ -54,7 +50,6 @@ func GetDateOfFirstThursdayOfMonth(t time.Time) int {
 }
 
 // GetDateOfFirstFridayOfMonth : get date of first friday
-// day : DaysMap
 func GetDateOfFirstFridayOfMonth(t time.Time) int {
 	dayFirstDateOfMonth := getDayOfFirstDateOfMonth(t)
 
@@ -66,13 +61,11 @@ func GetDateOfFirstFridayOfMonth(t time.Time) int {
 }
 
 // GetDateOfFirstSaturdayOfMonth : get date of first saturday
-// day : DaysMap
 func GetDateOfFirstSaturdayOfMonth(t time.Time) int {
 	return 7 - getDayOfFirstDateOfMonth(t)
 }
 
 // GetDateOfFirstSaturdayOfMonth : get date of first sunday
-// day : DaysMap
 func GetDateOfFirstSundayOfMonth(t time.Time) int {
 	dayFirstDateOfMonth := getDayOfFirstDateOfMonth(t)
 
