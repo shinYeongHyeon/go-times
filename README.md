@@ -26,6 +26,7 @@ $ go get -u github.com/shinYeongHyeon/go-times
     
 ## Dependency
  - [time](https://golang.org/pkg/time/)
+ - [math](https://pkg.go.dev/math)
 
 ## Description
 
@@ -69,13 +70,6 @@ func GetDateOfFirstSaturdayOfMonth(t time.Time) int
 This will get date of first sunday of month
 ```go
 func GetDateOfFirstSundayOfMonth(t time.Time) int
-```
-
-#### ~~GetDaysOfFirstSaturdayOfMonth~~
-~~This will get day of first saturday of month~~  
-deprecated, recommend [GetDateOfFirstSaturdayOfMonth](#getDateOfFirstSaturdayOfMonth)
-```go
-func GetDaysOfFirstSaturdayOfMonth(t time.Time) int
 ```
 
 #### GetNthWeekOfMonth
