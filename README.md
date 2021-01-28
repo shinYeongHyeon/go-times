@@ -23,6 +23,7 @@ $ go get -u github.com/shinYeongHyeon/go-times
   - [GetDateOfFirstSaturdayOfMonth](#getDateOfFirstSaturdayOfMonth)
   - [GetDateOfFirstSundayOfMonth](#getDateOfFirstSundayOfMonth)
   - [GetNthWeekOfMonth](#getNthWeekOfMonth)
+  - [GetLastTimeOfMonth](#getLastTimeOfMonth)
     
 ## Dependency
  - [time](https://golang.org/pkg/time/)
@@ -77,4 +78,10 @@ This will get `n`th Week of Month
 (Regard the start of the week as Sunday)
 ```go
 func GetNthWeekOfMonth(t time.Time) int
+```
+
+#### GetLastTimeOfMonth
+This will get Last TimeObject Of Month
+```go
+func GetLastTimeOfMonth(t time.Time) time.Time
 ```

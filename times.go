@@ -89,7 +89,17 @@ func GetNthWeekOfMonth(t time.Time) int {
 	return 1 + int(math.Ceil(float64(date-daysOfFirstSaturdayOfMonth)/7))
 }
 
+// GetLastTimeOfMonth : get Last TimeObject Of Request Month
+func GetLastTimeOfMonth(t time.Time) time.Time {
+	return getFirstTimeOfMonth(t).AddDate(0, 1, -1)
+}
+
 // getDayOfFirstDateOfMonth : get day of first date
 func getDayOfFirstDateOfMonth(t time.Time) int {
-	return DaysMap[(time.Date(t.Year(), t.Month(), 1, 0, 0, 0, 0, time.UTC)).Weekday()]
+	return DaysMap[(getFirstTimeOfMonth(t)).Weekday()]
+}
+
+// getFirstTimeOfMonth : First time of Month
+func getFirstTimeOfMonth(t time.Time) time.Time {
+	return time.Date(t.Year(), t.Month(), 1, 0, 0, 0, 0, time.UTC)
 }
