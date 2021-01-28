@@ -6,12 +6,11 @@ import (
 )
 
 var startedMondayMonth time.Time = time.Date(2021, 2, 3, 0, 0, 0, 0, time.UTC)
-var startedTuesdayMonth time.Time = time.Date(2021, 6, 3, 0, 0, 0, 0, time.UTC)
-var startedWednesdayMonth time.Time = time.Date(2021, 9, 3, 0, 0, 0, 0, time.UTC)
-var startedThursdayMonth time.Time = time.Date(2021, 4, 3, 0, 0, 0, 0, time.UTC)
-var startedFridayMonth time.Time = time.Date(2021, 1, 3, 0, 0, 0, 0, time.UTC)
 var startedSaturdayMonth time.Time = time.Date(2021, 5, 3, 0, 0, 0, 0, time.UTC)
 var startedSundayMonth time.Time = time.Date(2021, 8, 3, 0, 0, 0, 0, time.UTC)
+var lastTimeOf202108 time.Time = time.Date(2021, 8, 31, 0, 0, 0, 0, time.UTC)
+var lastTimeOf202002 time.Time = time.Date(2020, 2, 29, 0, 0, 0, 0, time.UTC)
+var timeOf20200206 time.Time = time.Date(2020, 2, 6, 0, 0, 0, 0, time.UTC)
 
 func TestGetDateOfFirstMondayOfMonth(t *testing.T) {
 	want := 1
@@ -101,5 +100,17 @@ func TestGetNthWeekOfMonth(t *testing.T) {
 	want = 2
 	if got := GetNthWeekOfMonth(startedSaturdayMonth); got != want {
 		t.Errorf("GetNthWeekOfMonth() = %v, want %v", got, want)
+	}
+}
+
+func TestGetLastTimeOfMonth(t *testing.T) {
+	want := lastTimeOf202108
+	if got := GetLastTimeOfMonth(startedSundayMonth); got != want {
+		t.Errorf("GetLastTimeOfMonth() = %v, want %v", got, want)
+	}
+
+	want = lastTimeOf202002
+	if got := GetLastTimeOfMonth(timeOf20200206); got != want {
+		t.Errorf("GetLastTimeOfMonth() = %v, want %v", got, want)
 	}
 }
