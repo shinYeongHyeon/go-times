@@ -23,6 +23,7 @@ $ go get -u github.com/shinYeongHyeon/go-times
   - [GetDateOfFirstFridayOfMonth](#getDateOfFirstFridayOfMonth)
   - [GetDateOfFirstSaturdayOfMonth](#getDateOfFirstSaturdayOfMonth)
   - [GetDateOfFirstSundayOfMonth](#getDateOfFirstSundayOfMonth)
+  - [GetFirstWorkingTimeOfMonth](#getFirstWorkingTimeOfMonth)
   - [GetNthWeekOfMonth](#getNthWeekOfMonth)
   - [GetLastTimeOfMonth](#getLastTimeOfMonth)
     
@@ -72,6 +73,12 @@ func GetDateOfFirstSaturdayOfMonth(t time.Time) int
 This will get date of first sunday of month
 ```go
 func GetDateOfFirstSundayOfMonth(t time.Time) int
+```
+
+#### GetFirstWorkingTimeOfMonth
+This will get First Working TimeObject of request year, month.
+```go
+func GetFirstWorkingTimeOfMonth(year, month int) time.Time
 ```
 
 #### GetNthWeekOfMonth
