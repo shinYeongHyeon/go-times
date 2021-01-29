@@ -94,6 +94,19 @@ func GetLastTimeOfMonth(t time.Time) time.Time {
 	return getFirstTimeOfMonth(t).AddDate(0, 1, -1)
 }
 
+// GetFirstWorkingTimeOfMonth : get First Working TimeObject Of Request Month
+func GetFirstWorkingTimeOfMonth(year, month int) time.Time {
+	firstDateOfMonth := time.Date(year, MonthMapByInt[month], 1, 0, 0, 0, 0, time.UTC)
+
+	if firstDateOfMonth.Weekday() == 0 {
+		return firstDateOfMonth.AddDate(0, 0, 1)
+	} else if firstDateOfMonth.Weekday() == 6 {
+		return firstDateOfMonth.AddDate(0, 0, 2)
+	}
+
+	return firstDateOfMonth
+}
+
 // getDayOfFirstDateOfMonth : get day of first date
 func getDayOfFirstDateOfMonth(t time.Time) int {
 	return DaysMap[(getFirstTimeOfMonth(t)).Weekday()]
